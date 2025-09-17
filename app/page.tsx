@@ -7,6 +7,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowRight, Sparkles, Heart, Star } from "lucide-react"
+import TestimonialsSection from "@/components/testimonials-section"
 
 export default function HomePage() {
   return (
@@ -129,7 +130,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Products Preview */}
-      <section className="py-20">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -198,6 +199,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
